@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mi página</title>
+    <title>Mi proyecto web</title>
 
     <style>
       body {
@@ -12,20 +12,27 @@
         margin: 0;
       }
       
-     .caja  {
-       background-color: #1a1a1a;
-       margin: 20px auto; /* centrado */
-       padding: 20px;
-       border-radius: 15px;
-       max-width: 600px; /* mas elegante */
-       box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.2);
-       }
+      .caja {
+        background-color: #1a1a1a;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 15px;
+        width: 80%;
+        max-width: 600px;
+        box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.2);
+        transition: 0.3s; /* animación */
+      }
+
+      .caja:hover {
+        transform: scale(1.03);
+      }
       
       h1 {
         color: #ff1a1a;
       }
-     h2, h3 {
-       color:  #ff4d4d;
+
+      h2, h3 {
+        color: #ff4d4d;
       }
       
       p {
@@ -38,11 +45,25 @@
         margin-top: 20px;
         border: 3px solid #ff1a1a;
       }
-    img:hover {
-      transform: scale(1.05);
-      transition: 0.3s;
+
+      img:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
       }
-      
+
+      .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #ff1a1a;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+      }
+
+      .btn:hover {
+        background: #cc0000;
+      }
     </style>
 
   </head>
@@ -50,24 +71,27 @@
   <body>
 
     <h1>Mi primer proyecto web 🖤</h1>
-    <p>Este curso es credo como proyecto de mi curso de diseño web 🌐</p>
+    <p>Este sitio fue creado como proyecto de mi curso de diseño web 🌐</p>
 
-<div class="caja">
-    <h2> sobre este proyecto: </h2>
-    <p> este proyecto es desarrollado desde cero utilizando HTML y CSS y publicado en github pages. </p>
-</div>
+    <div class="caja">
+      <h2>Sobre este proyecto</h2>
+      <p>Este proyecto fue desarrollado desde cero utilizando HTML y CSS y publicado en GitHub Pages.</p>
+    </div>
 
-  <div class="caja">
-    <h3>mis metas: </h3>
-      <p> Quiero trabajar en el extranjero 🌐 </p>
-  </div>
+    <div class="caja">
+      <h3>Mis metas</h3>
+      <p>Quiero trabajar en el extranjero 🌍</p>
+    </div>
 
-    
+    <!-- TU FOTO -->
     <img src="mi_foto.jpeg">
+
+    <!-- BOTÓN -->
+    <br>
+    <a href="https://github.com/hope-boop09" class="btn">Mi GitHub</a>
 
   </body>
 </html>
-
 
 
 
