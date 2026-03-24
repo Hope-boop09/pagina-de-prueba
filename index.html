@@ -10,6 +10,8 @@
         text-align: center;
         color: white;
         margin: 0;
+
+        animation: aparecer 1s ease-in; /*AQUÍ*/
       }
       
       .caja {
@@ -64,6 +66,14 @@
       .btn:hover {
         background: #cc0000;
       }
+       @keyframes aparecer {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
     </style>
 
   </head>
@@ -84,7 +94,9 @@
     </div>
 
     <!-- TU FOTO -->
+    <div class="caja">
     <img src="mi_foto.jpeg">
+    </div>
 
     <!-- BOTÓN -->
     <br>
