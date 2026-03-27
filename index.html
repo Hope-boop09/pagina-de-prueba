@@ -1,111 +1,106 @@
-    <!DOCTYPE html>
-    <html>
-      <cabeza>
-        <titulo>Proyecto web sobre la acuacultura</titulo>
-        <estilo>
-          cuerpo {
-          background: linear-gradient (to right, #00c6ff, #0072ff);
-          familia de fuentes: arial;
-          alineacion de texto: centro;
-          color: blue;
-          margen: 0;
-          animacion; aparecer2s entrada gradual; /*aqui*/
-          }
-          .caja {
+      <!DOCTYPE html>
+<html>
+  <head>
+    <title>Proyecto web sobre la acuacultura</title>
 
-          color de fondo: rgba(0, 255, 0, 0.5); /*verde transparente*/
-           margen: 20px auto;
-            relleno: 20px;
-              radio de borde: 15px;
-                ancho: 80%;
-          ancho maximo: 600px;
-          sombra de caja: 0px, 0px, 15px rgba (0, 255, 0, 0.5);
-          transicion:0,3s; /*animacion*/
-          }
-          .caja flotar {
+    <style>
+      body {
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        font-family: Arial;
+        text-align: center;
+        color: blue;
+        margin: 0;
+        animation: aparecer 2s ease-in;
+      }
 
-          transformar: escala(1.03);
-          borde: 3px dark blue;
-          }
-          h1 {
-            color: #a8edea;
-          }
-          h2, h3{
-            color: #2c3e50;
-          } 
+      .caja {
+        background-color: rgba(0, 255, 0, 0.5);
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 15px;
+        width: 80%;
+        max-width: 600px;
+        box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.5);
+        transition: 0.3s;
+      }
 
-             pag {
-          color: 00c853;
-          }
+      .caja:hover {
+        transform: scale(1.03);
+        border: 3px solid darkblue;
+      }
 
-            img {
-            ancho: 25px;
-            radio de borde: 50%;
-            margen superior: 20px;
-            borde: 3px solid #b2f7ef;
-          }
+      h1 {
+        color: #a8edea;
+      }
 
+      h2, h3 {
+        color: #2c3e50;
+      }
 
-           imagen: flotar{
-           transformar: escala (1.05);
-          transicion: 0.3s;
-          }
+      p {
+        color: #00c853;
+      }
 
-            .boton{
-             mostrar: bloque en linea;
-          margen superior: 20px;
-          relleno: 10px 20px;
-          background-color: green;
-          color: blue;
-          decoracion de texto: none;
-          radio de borde: 10px;
-          }
+      img {
+        width: 250px;
+        border-radius: 50%;
+        margin-top: 20px;
+        border: 3px solid #b2f7ef;
+      }
 
-          .boton:flotar {
-            fondo: #b2f7ef;
-          }
-          @fotogramos clave aparecer{
-          de {
-          opacidad: 0;
-          transformar: traducir Y (30px);
-          }
-          a{
-          opacidad: 1;
-          transformar: traducir Y (0);
-          }
-          }
-        </estilo>
-      </cabeza>
-      <cuerpo>
-        <h1>mi primer proyecto web de acuacultura</h1>
-        <p>este sitio fue creado como proyecto de mi curso de diseño web</p>
-          <div class="caja">
-            <h2>sobre este proyecto:</h2>
-          <p>este proyecto fue desarrollado desde cero utilizando HTML y CSS y se hanlara de la acuacultura entre otros.</p>
+      img:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
 
-        <div class="caja">
-          <h3>mis metas:</h3>
-          <p>Quiero dar a conocer más sobre la acuacultura y su apreciación.</p>
-        </div>
-            <!--foto de cultivo-->
-            <div class="caja">
-              <img src="https://www.acuacultura.com.mx/wp-content/uploads/2023/08/acuacultura-banner-1080x391.jpg">
-            </div>
-            <!--boton-->
-            <br>
-            <div class="caja">
-              <h3>Mis enlaces</h3>
-              <a href="https://github.com/hooe-boop09" class="btn"> mi github</a>
-            </div>
-          </body>
-          </html>
-            
-              
-              
-                
-              
-          
-      
+      .boton {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: green;
+        color: blue;
+        text-decoration: none;
+        border-radius: 10px;
+      }
 
-        
-        
+      .boton:hover {
+        background: #b2f7ef;
+      }
+
+      @keyframes aparecer {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Mi primer proyecto web de acuacultura</h1>
+    <p>Este sitio fue creado como proyecto de mi curso de diseño web</p>
+
+    <div class="caja">
+      <h2>Sobre este proyecto:</h2>
+      <p>Este proyecto fue desarrollado desde cero utilizando HTML y CSS y se hablará de la acuacultura.</p>
+    </div>
+
+    <div class="caja">
+      <h3>Mis metas:</h3>
+      <p>Quiero dar a conocer más sobre la acuacultura y su apreciación.</p>
+    </div>
+
+    <div class="caja">
+      <img src="https://www.acuacultura.com.mx/wp-content/uploads/2023/08/acuacultura-banner-1080x391.jpg">
+    </div>
+
+    <div class="caja">
+      <h3>Mis enlaces</h3>
+      <a href="https://github.com/hooe-boop09" class="boton">Mi GitHub</a>
+    </div>
+  </body>
+</html>        
