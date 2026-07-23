@@ -1,111 +1,228 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Proyecto web sobre la acuacultura</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UFT-8">
+
+  <meta name= "viewport" content="windth=device-width, initial-scale=1.0">
+
+  <title>Acuacultura</title>
 
   <style>
-    body {
-      background: linear-gradient(to right, #00c6ff, #0072ff);
-      font-family: Arial;
-      text-align: center;
-      color: blue;
-      margin: 0;
-      animation: aparecer 2s ease-in;
-    }
-
-    .caja {
-      background-color: rgba(0, 255, 0, 0.5);
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 15px;
-      width: 80%;
-      max-width: 600px;
-      box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.5);
-      transition: 0.3s;
-    }
-
-    .caja:hover {
-      transform: scale(1.03);
-      border: 3px solid darkblue;
-    }
-
-    h1 {
-      color: #333333;
-    }
-
-    h2, h3 {
-      color: #333333;
-    }
-
-    p {
-      color: #006400;
-    }
-
-    img {
-      width: 250px;
-      border-radius: 50%;
-      margin-top: 20px;
-      border: 3px solid #b2f7ef;
-      transition: 0.3s;
-    }
-
-    img:hover {
-      transform: scale(1.05);
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: green;
-      color: blue;
-      text-decoration: none;
-      border-radius: 10px;
-    }
-
-    .btn:hover {
-      background: #b2f7ef;
-    }
-
-    @keyframes aparecer {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
+    html{
+      scroll-behavior:smooth;
       }
-      to {
-        opacity: 1;
-        transform: translateY(0);
+    body{
+      margin:0;
+      font-family:Arial, Herlvetica, Sans-Serif;
+      background:Linear-gradient(180deg, #0096c7, #48cae4, #caf0f8);
       }
-    }
+
+    header{
+      background:#023e8a;
+      color:white;
+      padding:20px;
+      position:Sticky;
+      top:8;
+      box-shadow:0 3px 10px rgba(0, 0, 0, .3);
+      }
+    header h1{
+      margin:0;
+      font-size:40px;
+      }
+
+    header p{
+      margin-top:8px;
+      color:white;
+      }
+nav{
+  margin-top:20px;
+  }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:15px;
+      font-weight:bold;
+      transition:3s;
+      }
+    nav a: hover{
+      color:#90e0ef;
+      }
+    .banner{
+      width:100%;
+      max-width:900px;
+      border-radius:15px;
+      display:block;
+      margin:auto;
+      }
+
+    section{
+      padding:50px 20px;
+      }
+
+    .caja{
+      background:white;
+      width:85%;
+      max-width:900px;
+      margin:auto;
+      margin-bottom:30px;
+      padding:25px;
+      border-radius:20px;
+      box-shadow:0 0 20px rgba(0, 0, 0, .15);
+      transition:.3s;
+      }
+    .caja:hover{
+      transform:translateY(-5px);
+      }
+    h2{
+      color:#023e8a;
+      }
+    p{
+      color:#444;
+      line-height:1.7;
+      }
+    
+    .tarjeta{
+    display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+      }
+    .tarjeta{
+      background:white;
+      widht:250px;
+      padding:20px;
+      box-shadow:0 0 15px rgba(0, 0, 0, .15);
+      transition:.3s;
+      }
+
+    .tarjeta: hover{
+      transform:scale(1.05);
+      }
+    .tarjeta img{
+      width:100%;
+      border-radius:15px;
+      }
+    .btn{
+      display:inline-block;
+      margin-top:15px;
+      padding:10px 20px;
+      background:#0077b6;
+      color:white;
+      text-decoration:none;
+      border-radius:10px;
+      transition:.3s;
+      }
+    .btn:hover{
+      background:#023e8a;
+      }
+
+    footer{
+      background:#023e8a;
+      color:white;
+      padding:30px;
+      text-align:center;
+      }
+    footer p{
+      color:white;
+      }
   </style>
 </head>
-
 <body>
-
-  <h1>Mi primer proyecto web de acuacultura</h1>
-  <p>Este sitio fue creado como proyecto de mi curso de diseño web</p>
-
-  <div class="caja">
-    <h2>Sobre este proyecto:</h2>
-    <p>Este proyecto fue desarrollado desde cero utilizando HTML y CSS.</p>
+  <header>
+    <h1>🐠 Acuacultura</h1>
+    <p>Conociendo el cultivo sostenible de organismos acuaticos</p>
+    <nav>
+      <a href="#inicio"> inicio </a>
+      <a href="#quees"> ¿Qué es? </a>
+      <a href="#tipos"> Tipos </a>
+      <a href="#especies"> Especies </a>
+      <a href="#referencias"> Referencias </a>
+      <a href="#Github"> Github </a>
+    </nav>
+  </header>
+  <section id="inicio">
+    <img class="banner"
+      src="https://www.acuacultura.com.mx/wp-content/uploads/2023/08/acuacultura-banner-1080x391.jpg"
+      alt="Banner de acuacultura">
+  </section>
+  <section id="quees">
+    <div class="caja">
+      <h2>🌊 ¿Qué es la acuacultura?</h2>
+      <p>
+        La acuacultura es la actividad dedicada al cultivo de organismos acuáticos como peces, crustáceos, moluscos y algas bajo condiciones controladas.
+      </p>
+    </div>
+  </section>
+  <section id="tipos">
+    <div class="caja">
+      <h2>💧Tipos de acuacultura</h2>
+      <h3>Piscicultura</h3>
+      <p>Es un tipo de acuacultura que se ocupa en el crecimiento de peces en recintos acuáticos controladas, como estanques, lagos, embalses o corralesde red en el mar.Pueden ser sistemas totalmente cerradas denominados"sistemas integrados de reciclado";sistemas semi-cerrados, denominados"sistemas dinámicos/de pista"; o sistemas abiertos, denominados"sistemas de jaulas".
+      Las especies más comunes en la psicultura es la carpa, la tilapia de nilo,tilapia del Nilo, el pangasius (basa), la trucha arco iris, y en ambientes marinos, el salmón atlántico, la dorada y la lubina.</p>
+      <ul style="text-alingn:left; color:#444;">
+        <li> Acuacultura marina</li>
+        <li> Acuacultura continental</li>
+        <li> Sistemas intensivos</li>
+        <li> Sistemas semi.intensivos</li>
+        <li> Sistemas extensivos</li>
+      </ul>
+    </div>
+  </section>
+  <section id="especies">
+    <h2 style="text-align:center;">
+      🐟Especies cultivadas</h2>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <img scr="https://upload.wikimedia.org/wikipedia/commons/7/7d/Oreochromis_niloticus.jpg">
+        <h3>Tilapia</h3>
+        <p>La acuicultura de tilapia es a menudo desarrollada en sistemas extensivos o en sistemas controlados, los cuales presentan una diversidad de problemáticas; razón por lo que es necesario determinar las causas a estos problemas y ofrecer soluciones orientadas al desarrollo sostenible de la actividad. Los principales problemas en la mayoría de los cultivos son el reducido crecimiento y mortalidades elevadas, esto asociado al inadecuado manejo del cultivo.
+        Existen avances importantes en las técnicas de producción de tilapia, pero son pocas las granjas que aplican tendencias amigables con el ecosistema, como ejemplo se tiene el uso de los sistemas de recirculación (RAS por sus siglas en inglés), que son una tecnología de cultivo intensivo utilizado para disminuir el gasto del recurso hídrico, ya que se reutiliza el 95% de agua a través de varios componentes, al igual que la acuaponía (cultivos integrados entre peces y plantas) y los bioflocs (creación de un microcosmos entre peces y bacterias heterotróficas, agregados de microalgas, protozoos y materia orgánica en suspensión), las cuales son técnicas de cultivo en RAS
+        Las causas de mortalidad y los problemas asociados al cultivo de tilapia se deben corroborar con necropsias a los cadáveres y disecciones a organismos vivos, registrar la signología y la mortalidad acumulada al igual que realizar la toma de muestras de diversos órganos para su análisis patológico; además, determinar la calidad química biológica de agua para descartar la presencia de metales pesados y bacterias patógenas antes de iniciar el proyecto y evitar riesgos para los peces y/o consumidores finales.</p>
+      </div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Penaeus_vannamei.jpg">
+      <h3>Camarón</h3>
+      <p>El cultivo de camarón, se ha convertido en una alternativa para los pescadores tradicionales, quienes han apostado por la capacitación, tecnificación, centros de acopio, laboratorios y otras herramientas.
+      El camarón es un recurso que se captura en altamar en su forma silvestre con métodos de pesca sustentable, pero también es un producto que se puede cultivar por medio de granjas camaronícolas, del mismo modo, el manejo productivo de las áreas y lagunas costeras con fines de pesca y acuacultura, y el uso de zonas aledañas a las mismas para el desarrollo de actividades de producción acuícola, sigue ganando creciente interés a nivel mundial, debido esencialmente a la calidad y al alto valor de los productos obtenidos 
+      Existen factores que son universalmente importantes para todos los tipos de sistemas acuícolas de camarón, tales como: disponibilidad y calidad del agua, clima e infraestructura (caminos, electricidad, localidades, etc.); otros factores tales como topografía, tipos de suelo y costos de adquisición de los terrenos, son específicos de sistemas semi-intensivos
+      La selección e importancia de los distintos factores es variable, ya que ésta difiere no sólo del tipo de unidad de producción, sistema de cultivo, etc., sino también de acuerdo con las condiciones de cada productor, investigador o tomador de decisión. De la misma forma, las escalas espaciales también influyen en la selección de factores, ya que por ejemplo, en una superficie de 10 x 10 km, las consideraciones relativas al relieve, la batimetría y los suelos pueden ser factores específicos muy pertinentes, mientras que en esa misma superficie las tasas de evaporación y las distancias hasta los mercados principales, sólo tienen una trascendencia secundaria.</p>
+    </div>
+    <div class="tarjeta">
+      <img scr="https://upload.wikimedia.org/wikipedia/commons/3/37/Atlantic_salmon.jpg">
+      <h3>Salmón</h3>
+      <p>El cultivo de salmón es la práctica de criar salmones en entornos manejados cuidadosamente, ya sea en jaulas marinas localizadas en zonas costeras o en sistemas de tanques terrestres. Los acuicultores supervisan a los peces desde la etapa de huevo hasta la cosecha, a lo largo de un periodo de aproximadamente dos a tres años, gestionando las condiciones que favorecen su crecimiento, salud y bienestar.
+      Los salmones se crían en entornos cuidadosamente controlados que replican su ciclo de vida natural. Comienzan su vida en criaderos de agua dulce, donde los huevos eclosionan y los peces jóvenes se crían durante aproximadamente un año antes de ser trasladados a granjas marinas: grandes corrales flotantes ubicados en aguas costeras frías y limpias. En estos corrales, los salmones reciben una dieta nutritiva, y los acuicultores supervisan la salud de los peces, la calidad del agua y la alimentación mediante tecnologías avanzadas y sistemas cada vez más basados en inteligencia artificial. Algunos productores prolongan la etapa de agua dulce en sistemas terrestres para reducir el riesgo de enfermedades. Tras un periodo de entre 18 y 24 meses, los salmones son cosechados y procesados localmente, lo que asegura una fuente de proteínas constante, sostenible y de alta calidad.
+      Una vez que los salmones alcanzan el tamaño apto para la cosecha, son transportados a instalaciones de procesamiento donde se preparan para su comercialización (generalmente en forma de filetes frescos, aunque también son habituales los ejemplares enteros y otros productos derivados). En la actualidad, el cultivo de salmón constituye un sector altamente regulado, sujeto a estrictas normativas destinadas a garantizar la sostenibilidad medioambiental, el bienestar de los peces y la seguridad alimentaria, al tiempo que satisface la creciente demanda mundial de productos del mar saludables y ricos en proteínas.</p>
+    </div>
   </div>
-
-  <div class="caja">
-    <h3>Mis metas:</h3>
-    <p>Quiero dar a conocer más sobre la acuacultura.</p>
-  </div>
-
-  
-  <div class="caja">
-  <img src="https://www.acuacultura.com.mx/wp-content/uploads/2023/08/acuacultura-banner-1080x391.jpg" alt="Banner de acuacultura">
-</div>
-
-  <div class="caja">
-    <h3>Mis enlaces</h3>
-    <a href="https://github.com/hooe-boop09" class="btn">Mi GitHub</a>
-  </div>
-
+  </section>
+  <section id="referencias">
+    <div class="caja">
+      <h2>Referencias</h2>
+      <p>https://aquaculture.ec.europa.eu/es/about/aquaculture-types
+https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0188-62662017000500019
+https://www.gob.mx/conapesca/articulos/cultivo-de-camaron-produccion-acuicola-de-calidad?idiom=es
+https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0188-46112000000100005
+https://globalsalmoninitiative.org/es/acerca-del-cultivo-salm%C3%B3n/</p>
+      <ul style="text-align:left;">
+        <li>EU aquaculture</li>
+        <li>Scielo</li>
+        <li>CONAPESCA</li>
+        <li>Global salmon initiative</li>
+      </ul>
+    </div>
+  </section>
+  <footer id="github">
+    <h2>Mi GitHub</h2>
+    <a class="btn"
+      href="https://github.com/hope-boop09"
+      target="-blank">
+      Visitar mi GitHub
+    </a>
+    <p>
+      Proyecto realizado por Esperanza Soni <3
+    </p>
+  </footer>
 </body>
 </html>
